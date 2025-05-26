@@ -9,14 +9,10 @@
     --rosaBold: #CE9898;
     --cafe: #423A3A;
 
-    --linealOne: #F8BFBF;
-    --linealTwo: #EE8B8B;
-
     /* LINEAR GRADIENT */
-    --gradient: linear-gradient(
-        var(--linealOne) 0%,
-        var(--linealTwo) 100%
-    )
+    --gradient-combined: 
+        linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)),
+        linear-gradient(135deg, hsla(0, 0%, 100%, 0.6), hsla(0, 100%, 98%, 0.6));
 }
 
 html {
@@ -46,7 +42,7 @@ p {
 }
 
 body{
-    background-color: black;
+    background-color: #423A3A;
     color: white;
     font-family: var(--font);
 }
