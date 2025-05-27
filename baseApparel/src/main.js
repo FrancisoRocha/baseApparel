@@ -1,11 +1,10 @@
-import './styles/normalize.css'
-import './styles/style.css'
+import './styles/normalize.css';
+import './styles/style.css';
+import initBaseApparel from './store/baseApperal';
+import { App } from './App/app.js'
 
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <h1>Base Apparel</h1>
-  </div>
-`
+initBaseApparel();
+App('#app');
 
-setupCounter(document.querySelector('#counter'))
+
